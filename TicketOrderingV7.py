@@ -9,6 +9,13 @@ class TicketInfo:
         self.number = number
         self.price = price
 
+Opening = TicketInfo("Opening Ceremony", 100, 100)
+Tables = TicketInfo("Table A and B matches", 100, 50)
+Semi1 = TicketInfo("Semi Final 1", 100, 150)
+Semi2 = TicketInfo("Semi Fianl 2", 150, 150)
+Final = TicketInfo("Finals", 150, 200)
+Closing = TicketInfo("Closing Ceremony", 200, 200)
+
 class TicketOrdering:
     
     def CheckTickets(self):
@@ -92,14 +99,6 @@ class TicketOrdering:
 
    
     def __init__(self, parent):
-        Opening = TicketInfo("Opening Ceremony", 100, 100)
-        Tables = TicketInfo("Table A and B matches", 100, 50)
-        Semi1 = TicketInfo("Semi Final 1", 100, 150)
-        Semi2 = TicketInfo("Semi Fianl 2", 150, 150)
-        Final = TicketInfo("Finals", 150, 200)
-        Closing = TicketInfo("Closing Ceremony", 200, 200)
-
-        
         #Ticket Order frame
         self.Name = StringVar()
         self.Name.set("")
